@@ -1,16 +1,6 @@
 # Overview
 A card matching web game. Support different difficulty levels and multiple player mode. Best score is saved in session.
 
-# Backend: forked from Koalerplate
-A simple Koa 2 boilerplate for API's using ES6.
-https://github.com/dbalas/koalerplate.git
-
-Original author: 
-* **Daniel Balastegui** - [dbalas](https://github.com/dbalas)
-
-# Frontend: react.js
-https://reactjs.org
-
 ## Getting Started
 
 For development:
@@ -23,7 +13,17 @@ npm install
 npm start
 ```
 
-By default the API server starts on port 3000, http://localhost:3000.
+Go to http://localhost:3000.
+
+## Backend: forked from Koalerplate
+A simple Koa 2 boilerplate for API's using ES6.
+https://github.com/dbalas/koalerplate.git
+
+Original author: 
+* **Daniel Balastegui** - [dbalas](https://github.com/dbalas)
+
+## Frontend: react.js
+https://reactjs.org
 
 ### Prerequisites
 
