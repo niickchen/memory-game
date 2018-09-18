@@ -1,0 +1,36 @@
+{
+  "name": "memory-game",
+  "version": "1.0.0",
+  "description": "A memory card game created using React and Koa nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently — kill-others \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm run dev",
+    "frontend": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niickchen/memory-game.git"
+  },
+  "keywords": [
+    "memory",
+    "game",
+    "react",
+    "koa"
+  ],
+  "author": "Xinyu Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niickchen/memory-game/issues"
+  },
+  "homepage": "https://github.com/niickchen/memory-game#readme",
+  "dependencies": {
+    "concurrently": "^4.0.1",
+    "koa-session": "^5.9.0",
+    "styletron-engine-atomic": "^1.0.8",
+    "styletron-react": "^4.3.5",
+    "unfetch": "^4.0.1"
+  }
+}
