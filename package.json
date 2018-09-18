@@ -27,8 +27,18 @@
   },
   "homepage": "https://github.com/niickchen/memory-game#readme",
   "dependencies": {
+    "@koa/cors": "^2.2.2",
     "concurrently": "^4.0.1",
+    "dotenv": "^6.0.0",
+    "koa": "^2.5.3",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-respond": "^1.0.1",
+    "koa-router": "^7.4.0",
     "koa-session": "^5.9.0",
+    "koa-static": "^5.0.0",
+    "react": "^16.5.1",
     "styletron-engine-atomic": "^1.0.8",
     "styletron-react": "^4.3.5",
     "unfetch": "^4.0.1"
