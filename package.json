@@ -39,6 +39,8 @@
     "koa-session": "^5.9.0",
     "koa-static": "^5.0.0",
     "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-scripts": "^1.1.5",
     "styletron-engine-atomic": "^1.0.8",
     "styletron-react": "^4.3.5",
     "unfetch": "^4.0.1"
