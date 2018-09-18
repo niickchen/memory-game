@@ -18,7 +18,7 @@ For development:
 ```
 git clone https://github.com/niickchen/memory-game.git
 cd mmg
-mv /backend/.env.sample /backend/.env
+mv backend/.env.sample backend/.env
 npm install
 npm start
 ```
