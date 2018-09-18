@@ -1,5 +1,5 @@
 # Overview
-A card matching web game. Support different difficulty levels and multiple player mode.
+A card matching web game. Support different difficulty levels and multiple player mode. Best score is saved in session.
 
 # Backend: forked from Koalerplate
 A simple Koa 2 boilerplate for API's using ES6.
