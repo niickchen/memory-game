@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {styled} from 'styletron-react';
 import {Game} from './game';
-import {fetchGet} from './fetch-get';
-import {fetchPost} from './fetch-post';
+import {fetchGet} from '../utils/fetch-get';
+import {fetchPost} from '../utils/fetch-post';
 
 const startState = {
   score: 0,
