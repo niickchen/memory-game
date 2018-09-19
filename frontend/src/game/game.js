@@ -48,7 +48,7 @@ export class Game extends Component {
     this.setState({fetching: true, message: ''});
 
     // fetch the card color from backend
-    fetchPost('/api/cards/getColor', {ind: i})
+    fetchPost('/api/cards/getcolor', {ind: i})
     .then(res => {
       if (!res.ok) {
         this.setState({message: res.message, fetching: false});
