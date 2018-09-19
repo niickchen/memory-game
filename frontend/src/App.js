@@ -25,6 +25,7 @@ export class App extends Component {
     this.updateScore = this.updateScore.bind(this);
     this.updateTime = this.updateTime.bind(this);
     this.startTimer = this.startTimer.bind(this);
+    this.stopTimer = this.stopTimer.bind(this);
     this.startGame = this.startGame.bind(this);
     this.pressMultiplayBtn = this.pressMultiplayBtn.bind(this);
   }
@@ -43,6 +44,10 @@ export class App extends Component {
       fetchPost('/api/cards/max', {max: maxScore}); // TODO: error handling, display error message
     }
     this.setState({score, maxScore, scoreA, scoreB});
+
+    if (score === this.state.num || scoreA + scoreB === this.state.num) {
+      this.stopTimer();
+    }
   }
 
   updateTime() {
@@ -56,6 +61,14 @@ export class App extends Component {
     });
   }
 
+  stopTimer() {
+    const {interval} = this.state;
+    if (interval) {
+      clearInterval(interval);
+    }
+    this.setState({interval: null});
+  }
+
   startGame(inputValue) {
     // evaluate and set the number of cards
     if (!inputValue || isNaN(inputValue)) {
@@ -65,9 +78,7 @@ export class App extends Component {
     if (num < 36 || num % 2 === 1 || num > 334) {
       return;
     }
-    if (this.state.interval) {
-      clearInterval(this.state.interval);
-    }
+    this.stopTimer();
     this.setState({
       ...startState,
     });
