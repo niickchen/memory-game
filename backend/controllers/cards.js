@@ -1,7 +1,7 @@
 
 const cardColors = ['yellow', 'red', 'blue', 'green', 'black', 'purple', 'pink', 'lightgrey', 'orange', 'cyan', 
   'darkblue', 'lightblue', 'lime', '#8fa800', 'olive', 'silver', '#01eebd', '#c34550', '#f79fdf', '#6f082b', '#52c73c',
-  '#c1891b', '#188cb2', '#c8b5ec', '#38ec76', '#540bb8', '#b557f7'];
+  '#c1891b', '#188cb2', '#c8b5ec', '#38ec76', '#540bb8', '#b557f7', '#aaaaaa'];
 
 function getColor (ctx) {
   let ind = ctx.request.body.ind + 1;
